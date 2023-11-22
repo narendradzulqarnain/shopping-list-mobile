@@ -37,7 +37,7 @@ class ShopCard extends StatelessWidget {
           } else if (item.name == "Lihat Produk") {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const ProductPage()));
-            }else if (item.name == "Logout") {
+            } else if (item.name == "Logout") {
         final response = await request.logout(
             // TODO: Ganti URL dan jangan lupa tambahkan trailing slash (/) di akhir URL!
             "http://localhost:8000/auth/logout/");
